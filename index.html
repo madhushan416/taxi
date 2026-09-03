@@ -67,16 +67,12 @@
             padding: 0;
         }
 
-        /* Mobile Edge-to-Edge Centered Fullscreen Layout (All Phones & Resolutions) */
+        /* Mobile Fullscreen Layout - Original Natural Layout (Edge-to-Edge) */
         @media (max-width: 639px) {
             body {
                 padding: 0 !important;
                 margin: 0 !important;
                 background: #090d16 !important;
-                display: flex !important;
-                flex-direction: column !important;
-                align-items: center !important;
-                justify-content: flex-start !important;
                 min-height: 100vh !important;
                 min-height: 100dvh !important;
                 width: 100% !important;
@@ -92,27 +88,9 @@
                 border: none !important;
                 margin: 0 auto !important;
                 box-shadow: none !important;
-                display: flex !important;
-                flex-direction: column !important;
-                justify-content: space-between !important;
+                padding: 14px !important;
                 padding-top: max(10px, env(safe-area-inset-top)) !important;
                 padding-bottom: max(16px, env(safe-area-inset-bottom)) !important;
-                padding-left: clamp(10px, 3.5vw, 18px) !important;
-                padding-right: clamp(10px, 3.5vw, 18px) !important;
-            }
-
-            #main-driver-view>*,
-            #passenger-tracking-view>* {
-                width: 100% !important;
-            }
-
-            /* Proportionally scale counters on phone screens */
-            #disp-km,
-            #disp-fare,
-            #popup-disp-km,
-            #popup-disp-fare {
-                font-size: clamp(2rem, 8vw, 3rem) !important;
-                line-height: 1.15 !important;
             }
         }
 
